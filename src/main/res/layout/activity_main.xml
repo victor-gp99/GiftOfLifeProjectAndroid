@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.login.MainActivity"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:indeterminate="true"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gol" />
+
+    <EditText
+        android:id="@+id/editUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electronico"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editContra"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/logBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarme"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E6E5E5"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/fogotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:textColor="#2f4550"
+        />
+
+
+
+</LinearLayout>
